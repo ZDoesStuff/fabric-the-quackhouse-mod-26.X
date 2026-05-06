@@ -10,4 +10,4 @@ pluginManagement {
 }
 
 // Should match your modid
-rootProject.name = 'the-quackhouse-mod'
+rootProject.name = 'quackhousemod'
