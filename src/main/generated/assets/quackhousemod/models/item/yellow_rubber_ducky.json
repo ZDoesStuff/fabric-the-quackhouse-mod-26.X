@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "quackhousemod:item/yellow_rubber_ducky"
+  }
+}

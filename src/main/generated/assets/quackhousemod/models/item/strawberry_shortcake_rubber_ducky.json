@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "quackhousemod:item/strawberry_shortcake_rubber_ducky"
+  }
+}
