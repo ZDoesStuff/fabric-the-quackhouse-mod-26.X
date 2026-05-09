@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import z.quackhousemod.block.QuackhouseBlocks;
 import z.quackhousemod.creativemodetab.QuackhouseCreativeModeTabs;
 import z.quackhousemod.item.QuackhouseItems;
 
@@ -17,6 +18,7 @@ public class TheQuackhouseMod implements ModInitializer {
 		QuackhouseCreativeModeTabs.registerQuackhouseCreativeTabs();
 
 		QuackhouseItems.registerQuackhouseItems();
+		QuackhouseBlocks.registerQuackhouseBlocks();
 
 		LOGGER.info("Your duckies await!");
 	}

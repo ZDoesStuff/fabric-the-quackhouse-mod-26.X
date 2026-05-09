@@ -27,6 +27,11 @@ public class QuackhouseItems {
     public static final Item STONE_DUCKY = registerItem("stone_rubber_ducky", Item::new);
     public static final Item STRAWBERRYSHORTCAKE_DUCKY = registerItem("strawberry_shortcake_rubber_ducky", Item::new);
     public static final Item TRANS_DUCKY = registerItem("trans_rubber_ducky", Item::new);
+    public static final Item RED_DUCKY = registerItem("red_rubber_ducky", Item::new);
+    public static final Item FANCY_DUCKY = registerItem("dapper_rubber_ducky", Item::new);
+    public static final Item GOOGLY_DUCKY = registerItem("googly_rubber_ducky", Item::new);
+    public static final Item MAGNESIUM_SULFATE_CRYSTAL = registerItem("magnesium_sulfate_crystal", Item::new);
+    public static final Item EPSOM_SALT = registerItem("epsom_salt", Item::new);
 
 
     // This mess is what registers the items. Why have they made this so much more complex?
@@ -38,20 +43,5 @@ public class QuackhouseItems {
     public static void registerQuackhouseItems() {
         TheQuackhouseMod.LOGGER.info("Registering all your rubber duckies, right from the quackhouse!");
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(fabricCreativeModeTabOutput ->  {
-            fabricCreativeModeTabOutput.accept(YELLOW_DUCKY);
-            fabricCreativeModeTabOutput.accept(BROWN_DUCKY);
-            fabricCreativeModeTabOutput.accept(BLUE_DUCKY);
-            fabricCreativeModeTabOutput.accept(SUDSY_DUCKY);
-            fabricCreativeModeTabOutput.accept(BLUEBERRY_DUCKY);
-            fabricCreativeModeTabOutput.accept(PRIDE_DUCKY);
-            fabricCreativeModeTabOutput.accept(GRAPEJUICE_DUCKY);
-            fabricCreativeModeTabOutput.accept(ISOBEL_DUCKY);
-            fabricCreativeModeTabOutput.accept(MOLTEN_DUCKY);
-            fabricCreativeModeTabOutput.accept(POLKADOT_DUCKY);
-            fabricCreativeModeTabOutput.accept(STONE_DUCKY);
-            fabricCreativeModeTabOutput.accept(STRAWBERRYSHORTCAKE_DUCKY);
-            fabricCreativeModeTabOutput.accept(TRANS_DUCKY);
-        });
     }
 }

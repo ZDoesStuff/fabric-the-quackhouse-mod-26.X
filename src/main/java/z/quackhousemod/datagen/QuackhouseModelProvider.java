@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import z.quackhousemod.block.QuackhouseBlocks;
 import z.quackhousemod.item.QuackhouseItems;
 
 public class QuackhouseModelProvider extends FabricModelProvider {
@@ -15,7 +16,10 @@ public class QuackhouseModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
+        blockModelGenerators.createTrivialCube(QuackhouseBlocks.MAGNESIUM_SULFATE_ORE);
+        blockModelGenerators.createTrivialCube(QuackhouseBlocks.DEEPSLATE_MAGNESIUM_SULFATE_ORE);
+        blockModelGenerators.createTrivialCube(QuackhouseBlocks.MAGNESIUM_SULFATE_BLOCK);
+        blockModelGenerators.createTrivialCube(QuackhouseBlocks.MAGNESIUM_SULFATE_BRICKS);
     }
 
     @Override
@@ -33,5 +37,10 @@ public class QuackhouseModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(QuackhouseItems.MOLTEN_DUCKY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(QuackhouseItems.TRANS_DUCKY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(QuackhouseItems.SUDSY_DUCKY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(QuackhouseItems.RED_DUCKY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(QuackhouseItems.FANCY_DUCKY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(QuackhouseItems.GOOGLY_DUCKY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(QuackhouseItems.MAGNESIUM_SULFATE_CRYSTAL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(QuackhouseItems.EPSOM_SALT, ModelTemplates.FLAT_ITEM);
     }
 }
