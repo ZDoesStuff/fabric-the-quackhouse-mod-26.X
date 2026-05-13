@@ -20,6 +20,7 @@ public class QuackhouseModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(QuackhouseBlocks.DEEPSLATE_MAGNESIUM_SULFATE_ORE);
         blockModelGenerators.createTrivialCube(QuackhouseBlocks.MAGNESIUM_SULFATE_BLOCK);
         blockModelGenerators.createTrivialCube(QuackhouseBlocks.MAGNESIUM_SULFATE_BRICKS);
+        blockModelGenerators.createTrivialCube(QuackhouseBlocks.SUSPICIOUS_STONE);
     }
 
     @Override

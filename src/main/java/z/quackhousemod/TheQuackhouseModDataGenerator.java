@@ -2,6 +2,8 @@ package z.quackhousemod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import z.quackhousemod.datagen.QuackhouseBlockLootTableProvider;
+import z.quackhousemod.datagen.QuackhouseBlocksTagsProvider;
 import z.quackhousemod.datagen.QuackhouseModelProvider;
 
 public class TheQuackhouseModDataGenerator implements DataGeneratorEntrypoint {
@@ -10,5 +12,7 @@ public class TheQuackhouseModDataGenerator implements DataGeneratorEntrypoint {
 		var pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(QuackhouseModelProvider::new);
+		pack.addProvider(QuackhouseBlocksTagsProvider::new);
+		pack.addProvider(QuackhouseBlockLootTableProvider::new);
 	}
 }

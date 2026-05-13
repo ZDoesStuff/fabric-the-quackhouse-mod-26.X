@@ -34,6 +34,10 @@ public class QuackhouseBlocks {
             properties -> new Block(properties.strength(2f)
                     .requiresCorrectToolForDrops().sound(SoundType.CALCITE)));
 
+    public static final Block SUSPICIOUS_STONE = registerBlock("suspicious_stone",
+            properties -> new Block(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
     // Registrationsssss
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
